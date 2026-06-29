@@ -1,0 +1,446 @@
+/* ==========================================
+GLOBAL ADMIN STYLES
+========================================== */
+
+.admin-page {
+display: flex;
+min-height: 100vh;
+background: #f8f9fa;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+font-size: 12px;
+}
+
+.admin-main {
+flex: 1;
+padding: 24px;
+}
+
+.admin-title {
+font-size: 25px;
+font-weight: 700;
+color: #1a1a2e;
+margin-bottom: 20px;
+}
+
+/* ==========================================
+SIDEBAR
+========================================== */
+
+.admin-sidebar {
+width: 220px;
+min-height: 100vh;
+background: #1a1a2e;
+flex-shrink: 0;
+}
+
+.admin-side-title {
+color: #00d4ff;
+font-size: 14px;
+font-weight: 700;
+padding: 19px;
+border-bottom: 1px solid #2a2a4e;
+}
+
+.admin-side-link {
+display: block;
+padding: 14px 20px;
+color: #cccccc;
+text-decoration: none;
+font-size: 14px;
+transition: all 0.3s ease;
+}
+
+.admin-side-link:hover {
+background: #16213e;
+color: #00d4ff;
+}
+
+.admin-divider {
+height: 1px;
+background: #2a2a4e;
+margin: 8px 0;
+}
+
+/* ==========================================
+DASHBOARD
+========================================== */
+
+.admin-stat-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 16px;
+}
+
+.admin-stat-card {
+background: #ffffff;
+padding: 19px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-stat-number {
+font-size: 31px;
+font-weight: 700;
+}
+
+.admin-stat-label {
+margin-top: 6px;
+font-size: 14px;
+color: #666;
+}
+
+.admin-info-box {
+margin-top: 20px;
+background: #ffffff;
+padding: 18px;
+border-radius: 12px;
+}
+
+/* ==========================================
+TOOLBAR
+========================================== */
+
+.admin-toolbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+/* ==========================================
+BUTTONS
+========================================== */
+
+.admin-btn,
+.btn {
+border: none;
+cursor: pointer;
+border-radius: 8px;
+padding: 10px 16px;
+font-size: 13px;
+font-weight: 600;
+transition: all 0.3s ease;
+}
+
+.add-btn {
+background: #1a1a2e;
+color: #00d4ff;
+}
+
+.add-btn:hover {
+opacity: 0.9;
+}
+
+.edit-btn {
+background: #3498db;
+color: #fff;
+}
+
+.edit-btn:hover {
+background: #2980b9;
+}
+
+.delete-btn,
+.btn-danger {
+background: #e74c3c;
+color: #fff;
+}
+
+.delete-btn:hover,
+.btn-danger:hover {
+background: #c0392b;
+}
+
+.btn-primary {
+background: #1a1a2e;
+color: #fff;
+}
+
+.btn-primary:hover {
+opacity: 0.9;
+}
+
+.btn-secondary {
+background: #e5e7eb;
+color: #333;
+}
+
+.btn-secondary:hover {
+background: #d1d5db;
+}
+
+/* ==========================================
+TABLES
+========================================== */
+
+.table-wrapper {
+width: 100%;
+overflow-x: auto;
+background: #fff;
+border-radius: 12px;
+}
+
+.admin-table {
+width: 100%;
+border-collapse: collapse;
+min-width: 700px;
+}
+
+.admin-table th {
+background: #f1f5f9;
+padding: 14px;
+text-align: left;
+font-size: 13px;
+font-weight: 600;
+}
+
+.admin-table td {
+padding: 14px;
+border-bottom: 1px solid #eee;
+font-size: 13px;
+}
+
+.admin-table tr:hover {
+background: #fafafa;
+}
+
+/* ==========================================
+PRODUCTS
+========================================== */
+
+.product-image {
+width: 120px;
+height: 55px;
+object-fit: contain;
+border-radius: 8px;
+background: #f8f9fa;
+}
+
+.product-name {
+font-size: 14px;
+font-weight: 600;
+}
+
+.product-brand {
+font-size: 13px;
+color: #777;
+}
+
+/* ==========================================
+BADGES
+========================================== */
+
+.badge,
+.status-badge {
+display: inline-block;
+padding: 6px 10px;
+border-radius: 999px;
+font-size: 12px;
+font-weight: 600;
+}
+
+.success,
+.badge-success {
+background: #d4edda;
+color: #0e862a;
+}
+
+.danger,
+.badge-danger {
+background: #f8d7da;
+color: #b82231;
+}
+
+.warning,
+.badge-warning {
+background: #fff3cd;
+color: #967514;
+}
+
+.info,
+.badge-info {
+background: #d1ecf1;
+color: #0c6474;
+}
+
+.primary {
+background: #dbeafe;
+color: #1d4ed8;
+}
+
+/* ==========================================
+USERS & ORDERS
+========================================== */
+
+.action-buttons {
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+.customer-name {
+font-size: 14px;
+font-weight: 600;
+}
+
+.customer-email {
+font-size: 13px;
+color: #777;
+}
+
+.status-select {
+width: 100%;
+padding: 8px;
+font-size: 14px;
+border: 1px solid #ddd;
+border-radius: 8px;
+}
+
+/* ==========================================
+PRODUCT FORM
+========================================== */
+
+.product-form {
+background: #ffffff;
+padding: 24px;
+border-radius: 12px;
+max-width: 900px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 7px;
+font-size: 14px;
+font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+width: 100%;
+padding: 11px 12px;
+font-size: 14px;
+border: 1px solid #dcdcdc;
+border-radius: 8px;
+box-sizing: border-box;
+}
+
+.form-group textarea {
+resize: vertical;
+}
+
+.form-row {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 16px;
+}
+
+.checkbox-group {
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 18px 0;
+}
+
+.form-actions {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+/* ==========================================
+EMPTY STATE
+========================================== */
+
+.empty-state {
+text-align: center;
+padding: 30px;
+color: #777;
+font-size: 14px;
+}
+
+/* ==========================================
+TABLET
+========================================== */
+
+@media (max-width: 992px) {
+.admin-page {
+flex-direction: column;
+}
+
+.admin-sidebar {
+width: 100%;
+min-height: auto;
+}
+
+.admin-main {
+padding: 18px;
+}
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+.admin-toolbar {
+flex-direction: column;
+align-items: stretch;
+}
+
+.admin-stat-grid {
+grid-template-columns: 1fr;
+}
+
+.form-row {
+grid-template-columns: 1fr;
+}
+
+.action-buttons {
+flex-direction: column;
+}
+
+.admin-btn,
+.btn {
+width: 100%;
+}
+
+.admin-title {
+font-size: 22px;
+}
+}
+
+@media (max-width: 576px) {
+.admin-main {
+padding: 15px;
+}
+
+.product-form {
+padding: 18px;
+}
+
+.admin-table th,
+.admin-table td {
+padding: 10px;
+font-size: 12px;
+}
+
+.product-image {
+width: 110px;
+height: 45px;
+}
+
+.admin-title {
+font-size: 22px;
+}
+
+.admin-stat-number {
+font-size: 28px;
+}
+}

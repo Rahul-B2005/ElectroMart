@@ -1,0 +1,663 @@
+/* ====================================
+   GLOBAL
+==================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  width: 100%;
+}
+
+/* ====================================
+   HERO SECTION
+==================================== */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 50%,
+    #0ea5e9 100%
+  );
+}
+
+.hero-overlay {
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #dbeafe;
+  margin-bottom: 30px;
+}
+
+/* ====================================
+   SEARCH BOX
+==================================== */
+
+.search-box {
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  padding: 14px 18px;
+  font-size: 15px;
+}
+
+.search-box button {
+  border: none;
+  cursor: pointer;
+
+  padding: 14px 24px;
+
+  background: #0ea5e9;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #0284c7;
+}
+
+/* ====================================
+   HERO BUTTONS
+==================================== */
+
+.hero-buttons {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #0ea5e9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0284c7;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #0f172a;
+}
+
+/* ====================================
+   STATS SECTION
+==================================== */
+
+.stats {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 60px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+
+  padding: 22px;
+  text-align: center;
+
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.stat-card h2 {
+  color: #0ea5e9;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* ====================================
+   CATEGORIES
+==================================== */
+
+.categories {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 60px 20px;
+}
+
+.categories h2 {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(160px, 1fr));
+
+  gap: 20px;
+}
+
+.category-card {
+  background: white;
+
+  padding: 22px 15px;
+
+  border-radius: 15px;
+
+  text-align: center;
+  color: #1e293b;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.category-card span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ====================================
+   FEATURED PRODUCTS
+==================================== */
+
+.featured {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 60px 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.section-header a {
+  color: #0ea5e9;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill, minmax(240px, 1fr));
+
+  gap: 20px;
+}
+
+/* ====================================
+   OFFER BANNER
+==================================== */
+
+.offer-banner {
+  margin-top: 60px;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0ea5e9,
+    #2563eb
+  );
+}
+
+.offer-banner h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.offer-banner p {
+  color: #dbeafe;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.offer-banner a {
+  display: inline-block;
+
+  padding: 12px 30px;
+
+  border-radius: 50px;
+
+  background: white;
+  color: #2563eb;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.offer-banner a:hover {
+  transform: translateY(-3px);
+}
+
+/* ====================================
+   LARGE TABLET & SMALL LAPTOP
+==================================== */
+
+@media (max-width: 992px) {
+
+  .hero {
+    min-height: 70vh;
+    padding: 60px 20px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ====================================
+   TABLET
+==================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 220px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .search-box input {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .search-box button {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .offer-banner {
+    padding: 60px 15px;
+  }
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .categories,
+  .featured,
+  .stats {
+    padding: 50px 15px;
+  }
+
+  .categories h2,
+  .section-header h2,
+  .offer-banner h2 {
+    font-size: 1.8rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card,
+  .stat-card {
+    padding: 18px;
+  }
+}
+
+/* ====================================
+   SMALL MOBILE
+==================================== */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .categories h2,
+  .section-header h2,
+  .offer-banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+/* ── Paste these into your existing HomePage.css ── */
+
+/* ROTATING ANNOUNCEMENT BANNER */
+.announcement-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 20px;
+  min-height: 42px;
+  position: relative;
+  z-index: 100;
+  transition: background 0.6s ease;
+}
+
+/* Fade animations */
+.banner-fade-in {
+  animation: bannerFadeIn 0.4s ease forwards;
+}
+.banner-fade-out {
+  animation: bannerFadeOut 0.4s ease forwards;
+}
+@keyframes bannerFadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes bannerFadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(6px); }
+}
+
+/* Banner text — white by default, dark for light-bg banners */
+.banner-text {
+  flex: 1;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #fff;
+  font-weight: 500;
+}
+.banner-text.dark {
+  color: #1a1a1a;
+}
+
+/* Banner link */
+.banner-link {
+  color: #f5a623;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 6px;
+  transition: opacity 0.2s;
+}
+.banner-link:hover { opacity: 0.75; text-decoration: underline; }
+.banner-link.dark {
+  color: #0f3460;
+}
+
+/* Dot indicators */
+.banner-dots {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.banner-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.2s;
+}
+.banner-dot.active {
+  background: #fff;
+  transform: scale(1.3);
+}
+
+/* Close button */
+.banner-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: color 0.2s, background 0.2s;
+}
+.banner-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+.banner-close.dark {
+  color: rgba(0, 0, 0, 0.5);
+}
+.banner-close.dark:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* SCROLL TO TOP */
+.scroll-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #0f3460;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  animation: fadeInUp 0.3s ease;
+}
+.scroll-to-top:hover {
+  background: #1a1a2e;
+  transform: translateY(-3px);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

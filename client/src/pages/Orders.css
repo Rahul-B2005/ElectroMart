@@ -1,0 +1,90 @@
+
+  /* Mobile Devices */
+@media (max-width: 600px) {
+  .orders-page {
+    padding: 20px 12px !important;
+  }
+
+  .orders-title {
+    font-size: 22px !important;
+  }
+
+  .order-card {
+    padding: 15px !important;
+  }
+
+  .order-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+
+  .order-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .order-item {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .order-item img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .item-name {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .price-row {
+    font-size: 13px;
+  }
+
+  .cancel-btn {
+    width: 100%;
+  }
+
+  .address-block {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .orders-title {
+    font-size: 20px !important;
+  }
+
+  .order-id {
+    font-size: 13px;
+  }
+
+  .order-date {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .status-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .total-price {
+    font-size: 15px;
+  }
+
+  .item-chip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .view-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
