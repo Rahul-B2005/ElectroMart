@@ -25,7 +25,7 @@ app.get('/api/health', (req, res) => res.json({ status: 'OK', message: 'ElectroS
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb+srv://Rahul:Rahul123%24@cluster0.dflixki.mongodb.net/electroshop")
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log('✅ MongoDB connected');
     app.listen(process.env.PORT || 5000, () =>
